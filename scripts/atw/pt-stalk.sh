@@ -15,12 +15,15 @@ Executes pt-stalk or stops the daemon
 
 Command line options:
 
-   --pid             pt-stalk PID file
-   --log             pt-stalk log file
-   -d, --dest        Destination for the summaries. Default: .$(pwd)/$(hostname)
-   --iterations      How many iterations to run
-   --sleep           Sleep time between iterations
-   --daemon          Run pt-stalk in daemon mode
+   --pid                   pt-stalk PID file
+   --log                   pt-stalk log file
+   -d, --dest              Destination for the summaries. 
+                           Default: .$(pwd)/$(hostname)
+   --iterations            How many iterations to run
+   --sleep                 Sleep time between iterations
+   --daemon                Run pt-stalk in daemon mode
+   --action=[start|stop]   Start or stop pt-stalk. Compresses data when stopped.
+                           Default: start
 
 EOS
    exit
